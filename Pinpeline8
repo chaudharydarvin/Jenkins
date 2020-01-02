@@ -18,6 +18,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+A try/catch block is useful to perform specific actions based on the result of a complex pipeline. This example Jenkinsfile shows.
+
+Pull from Git
+Install nodejs
+Build
+Test
+Build and push a docker container to private dockerhub
+SSH to a server to tell it to use the new image
+Notification by email of positive or negative results
+
 */
 
 node('node') {
