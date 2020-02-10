@@ -3,7 +3,7 @@ node {
 
     checkout scm
 
-    stage 'Gradle Static Analysis'
+    stage 'Gradle Static Analysis Tool'
     withSonarQubeEnv {
         sh "./gradlew clean sonarqube"
     }
